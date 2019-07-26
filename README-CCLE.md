@@ -8,6 +8,7 @@ git clone git@github.com:ucla/ccledocs.git ccledocs
 cd ccledocs
 git checkout master131
 git pull
+git submodule update --init --recursive
 ```
 
 ```
