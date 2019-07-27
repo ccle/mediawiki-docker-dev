@@ -15,7 +15,6 @@ git submodule update --init --recursive
 cd ~/Projects/mediawiki/ccledocs
 cp ../config/mediawiki/LocalSettings.php LocalSettingsPrivate.php
 ln -s LocalSettingsDev.php LocalSettings.php
-cp 
 ```
 
 ```
