@@ -47,7 +47,9 @@ Open http://default.web.mw.localhost:8080/ in your browser
 
 ## Access
 
- - [Default MediaWiki Site](http://default.web.mw.localhost:8080)
+* [Default MediaWiki Site](http://default.web.mw.localhost:8080)
+ * username: Admin
+ * password: dockerpass
 * [PhpMyAdmin](http://phpmyadmin.mw.localhost:8080)
   * username: root
   * password: toor
