@@ -294,18 +294,18 @@ Note that the other volumes for the `web` service will be merged, so you don't n
       c. Run docker-compose exec "db-master" sh -c "bash" (Where db-master is the database server name)
       d. Type Exit and press Enter (Steps b,c and d are to confirm that you have the right database server name and it's                access)
       e. Now copy the import file from your local computer to database server.
-         wget http://test.ccle.ucla.edu/vagrant/mediawiki.2019-04-01_0315.gz to downloads folder and unzip it
-         docker cp /Users/<username>/Downloads/<mediawiki.2019-04-01_0315> mediawiki_db-master_1:/tmp/mediawiki.2019-04-                01_0315
-         Now that you copied the file to the db container, Run docker-compose exec "db-master" sh -c "bash"
-         Go to /tmp make sure the file is copied
-         Stay in /tmp
-         mysql -u root -p
-         Password: toor
-         use default;
-         source mediawiki.2019-04-01_0315;
-         Import should be done in no time.
-         Exit form database
-         Exit from database server
-         Run ./bash in mediawiki folder
-         Run maintenance/update.php
+         - wget http://test.ccle.ucla.edu/vagrant/mediawiki.2019-04-01_0315.gz to downloads folder and unzip it
+         - docker cp /Users/<username>/Downloads/<mediawiki.2019-04-01_0315> mediawiki_db-master_1:/tmp/mediawiki.2019-04-                01_0315
+         - Now that you copied the file to the db container, Run docker-compose exec "db-master" sh -c "bash"
+         - Go to /tmp make sure the file is copied
+         - Stay in /tmp
+         - mysql -u root -p
+         - Password: toor
+         - use default;
+         - source mediawiki.2019-04-01_0315;
+         - Import should be done in no time.
+         - Exit form database
+         - Exit from database server
+         - Run ./bash in mediawiki folder
+         - Run maintenance/update.php
    ```
