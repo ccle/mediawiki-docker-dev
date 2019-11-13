@@ -281,13 +281,13 @@ Note that the other volumes for the `web` service will be merged, so you don't n
  
  2. If you see a warning (Incorrect format parameter) while importing Database dump mediawiki.2019-04-01_0315.gz on phpMyAdmin
    - Solution 1: 
-    ```yaml
+  ``` yaml
    Go to docker using ./bash command and update the php.ini file
       - upload_max_filesize=128M
       - post_max_size=128M
-    ```  
+  ```  
    - Solution 2: 
-    ```yaml
+   ``` yaml
       If the Solution 1 above doesn't help, do the import manually
       a. Go to mediawiki folder (One folder down from ccledocs)
       b. Find the databsae server name using docker ps -a
@@ -308,4 +308,4 @@ Note that the other volumes for the `web` service will be merged, so you don't n
          Exit from database server
          Run ./bash in mediawiki folder
          Run maintenance/update.php
-     ```
+   ```
